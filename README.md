@@ -1,6 +1,4 @@
-# GreenVsRed
- 
-Description of the game:
+ Description of the game:
 'Green vs Red' is a game played on a 2D grid that in theory can be infinite (in our case we will assume that x<=y<1 000)
 Each cell on this grid can be either green (represented by 1) or red(represented by 0). The game always receives an 
 innitial state of the grid which we will call 'Generation Zero'. After that a set of 4 rules are applied across the grid and those rules form the next generation.
@@ -11,23 +9,23 @@ Rules that create the next generation:
 	4. A green cell will stay green in the next generation if it has either 2, 3 or 6 green neighbours.
 (x1 and y1) wil be coordinates of a cell in the grid. We would like to calculate how many generations from Generation Zero until generation N this cell was green. (The calculation should include generation Zero and generation N)
 Example1:
-# 3x3 grid in the initial state, the second row is all 1s, how many times will the cell [1,0] become green in 10 turns?
+3x3 grid in the initial state, the second row is all 1s, how many times will the cell [1,0] become green in 10 turns?
 3, 3
 000
 111
 000
 1, 0, 10
-# expected result: 5
+expected result: 5
 
 Example2:
-# 4x4 grid. Input:
+4x4 grid. Input:
 4, 4
 1001
 1111
 0100
 1010
 2, 2, 15
-# expected result:14
+expected result:14
 
 API Documentation:
 In class Grid:
