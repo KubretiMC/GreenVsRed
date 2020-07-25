@@ -18,12 +18,12 @@ public class GreenVsRed {
 
     public void start() {
         Scanner sc = new Scanner(System.in);
+do {
+    String gridSize = sc.nextLine().replaceAll("\\s+", "");  // user input for number of columns and rows in the grid
 
-        String gridSize = sc.nextLine().replaceAll("\\s+", "");  // user input for number of columns and rows in the grid
-
-        this.x = Integer.parseInt(gridSize.split("[,]")[0]); //takes the number of columns
-        this.y = Integer.parseInt(gridSize.split("[,]")[1]); //takes the number of rows
-
+    this.x = Integer.parseInt(gridSize.split("[,]")[0]); //takes the number of columns
+    this.y = Integer.parseInt(gridSize.split("[,]")[1]); //takes the number of rows
+}while(x>y || y>=1000);
         Grid grid = new Grid(this.x, this.y);
 
         this.line = new String();
