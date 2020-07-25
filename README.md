@@ -13,12 +13,19 @@ Rules that create the next generation:
 	
 	4. A green cell will stay green in the next generation if it has either 2, 3 or 6 green neighbours.
 (x1 and y1) wil be coordinates of a cell in the grid. We would like to calculate how many generations from Generation Zero until generation N this cell was green. (The calculation should include generation Zero and generation N)
+
 Example1:
-# 3x3 grid in the initial state, the second row is all 1s, how many times will the cell [1,0] become green in 10 turns?
+
+3x3 grid in the initial state, the second row is all 1s, how many times will the cell [1,0] become green in 10 turns?
+
 3, 3
+
 000
+
 111
+
 000
+
 1, 0, 10
 # expected result: 5
 
