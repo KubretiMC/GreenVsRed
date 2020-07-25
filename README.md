@@ -1,4 +1,4 @@
- Description of the game:
+Description of the game:
 'Green vs Red' is a game played on a 2D grid that in theory can be infinite (in our case we will assume that x<=y<1 000)
 Each cell on this grid can be either green (represented by 1) or red(represented by 0). The game always receives an 
 innitial state of the grid which we will call 'Generation Zero'. After that a set of 4 rules are applied across the grid and those rules form the next generation.
